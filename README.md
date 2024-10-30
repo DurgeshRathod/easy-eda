@@ -1,21 +1,20 @@
+# Easy Insight (One Click - Easy Exploratory Data Analysis)
 
-# Easy Insight (One click - Easy Exploratory Data Analysis)
+**Easy Insight** is a simple library designed for exploratory data analysis (EDA) 📊. It provides an easy way to inspect and analyze datasets, helping you to quickly understand the structure and contents of your data 📈.
 
-**Easy Insight** is a simple library designed for exploratory data analysis (EDA). It provides an easy way to inspect and analyze datasets, helping you to quickly understand the structure and contents of your data.
+## Features 
 
-## Features
+- 🔍 Basic data inspection
+- ❓ Missing values analysis
+- 📊 Univariate analysis for numerical and categorical features
+- 🔗 Bivariate analysis for understanding relationships between variables
+- 🌐 Multivariate analysis for comprehensive insights
 
-- Basic data inspection
-- Missing values analysis
-- Univariate analysis for numerical and categorical features
-- Bivariate analysis for understanding relationships between variables
-- Multivariate analysis for comprehensive insights
+## Installation ⚙️
 
-## Installation
+You can install Easy Insight using [Poetry](https://python-poetry.org/) or `pip`.
 
-You can install Easy Insight using [Poetry](https://python-poetry.org/) or `pip`. 
-
-## Using Poetry
+### Using Poetry
 
 1. Install Poetry if you haven't already:
 
@@ -29,13 +28,13 @@ You can install Easy Insight using [Poetry](https://python-poetry.org/) or `pip`
    poetry add easy-insight
    ```
 
-## Using pip
+### Using pip
 
 ```bash
 pip install easy-insight
 ```
 
-## Usage
+## Usage 🚀
 
 Here's a quick example of how to use Easy Insight for exploratory data analysis on a DataFrame `df`:
 
@@ -53,12 +52,13 @@ from easy_insight.eda_tools.bivariate_analysis import BivariateAnalyzer, Numeric
 from easy_insight.eda_tools.multivariate_analysis import SimpleMultivariateAnalysis
 ```
 
-## Load your DataFrame (example)
-```
+## Load your DataFrame (example) 📂
+
+```python
 df = pd.read_csv('your_dataset.csv')
 ```
-## Quick Automated EDA
 
+## Quick Automated EDA ⚡
 
 ### For Quick automated EDA
 
@@ -68,56 +68,61 @@ from easy_insight.eda_tools.utility import quick_eda
 quick_eda(df, perform_data_inspection=True, perform_missing_values_analysis=True,
           perform_univariate_analysis=True, perform_bivariate_analysis=True, perform_multivariate_analysis=True)
 ```
-## For Quick but customized EDA
+
+## For Quick but Customized EDA 🛠️
 
 ### Data Inspection
-```
+
+```python
 data_inspector = DataInspector(DataTypeInspectionStrategy())
 data_inspector.evaluate_inspection(df)
 ```
 
-### Set strategy to summary statistics
+### Set strategy to Summary Statistics
 
-```
+```python
 data_inspector.set_strategy(SummaryStatisticsInspectionStrategy())
 data_inspector.evaluate_inspection(df)
 ```
 
-### Missing Values Analysis
+### Missing Values Analysis❓
 
-```
+```python
 missing_values_analysis = SimpleMissingValuesAnalysis()
 missing_values_analysis.analyze(df)
 ```
 
-### Univariate Analysis
-```
+### Univariate Analysis 📊
+
+```python
 univariate_analyzer = UnivariateAnalyzer(NumericalUnivariateAnalysis())
 numerical_columns = df.select_dtypes(include=[int, float]).columns
 for feature in numerical_columns:
     univariate_analyzer.execute_analysis(df, feature=feature)
 ```
 
-### Bivariate Analysis
-```
+### Bivariate Analysis 🔗
+
+```python
 bivariate_analysis = BivariateAnalyzer(CategoricalVsNumericalAnalysisStrategy())
 bivariate_analysis.execute_analysis(df, "department", "annual_salary")
 ```
 
-### Multivariate Analysis
-```
+### Multivariate Analysis 🌐
+
+```python
 multivariate_analysis = SimpleMultivariateAnalysis()
 multivariate_analysis.analyze(df)
 ```
 
-## Contributing
+## Contributing 🤝
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or bugs you encounter.
 
-## License
+## License 📝
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Author
+## Author ✍️
 
-Durgesh Rathod - [durgeshrathod.777@gmail.com](mailto:durgeshrathod.777@gmail.com)
+Durgesh Rathod - [durgeshrathod.777@gmail.com](mailto:durgeshrathod.777@gmail.com) 

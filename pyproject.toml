@@ -1,9 +1,12 @@
 [tool.poetry]
-name = "easy_insight"
-version = "1.0.0"
+name = "easy-insight"
+version = "1.0.3"
 description = "A simple library for easy exploratory data analysis"
 authors = ["Durgesh Rathod <durgeshrathod.777@gmail.com>"]
 readme = "README.md"  # Make sure this file exists
+homepage = "https://github.com/DurgeshRathod/easy-insight"
+repository = "https://github.com/DurgeshRathod/easy-insight"
+keywords = ["exploratory-data-analysis","eda", "data analysis", "machine learning", "visualisations"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
