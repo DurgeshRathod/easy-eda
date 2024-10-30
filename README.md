@@ -1,7 +1,7 @@
 
-# Easy EDA
+# Easy Insight (One click - Easy Exploratory Data Analysis)
 
-**Easy EDA** is a simple library designed for exploratory data analysis (EDA). It provides an easy way to inspect and analyze datasets, helping you to quickly understand the structure and contents of your data.
+**Easy Insight** is a simple library designed for exploratory data analysis (EDA). It provides an easy way to inspect and analyze datasets, helping you to quickly understand the structure and contents of your data.
 
 ## Features
 
@@ -13,7 +13,7 @@
 
 ## Installation
 
-You can install Easy EDA using [Poetry](https://python-poetry.org/) or `pip`. 
+You can install Easy Insight using [Poetry](https://python-poetry.org/) or `pip`. 
 
 ## Using Poetry
 
@@ -37,20 +37,20 @@ pip install easy-insight
 
 ## Usage
 
-Here's a quick example of how to use Easy EDA for exploratory data analysis on a DataFrame `df`:
+Here's a quick example of how to use Easy Insight for exploratory data analysis on a DataFrame `df`:
 
 ```python
 import pandas as pd
 
-from easy_insight.eda.eda_tools.basic_data_inspection import DataInspector, DataTypeInspectionStrategy, SummaryStatisticsInspectionStrategy
+from easy_insight.eda_tools.basic_data_inspection import DataInspector, DataTypeInspectionStrategy, SummaryStatisticsInspectionStrategy
 
-from easy_insight.eda.eda_tools.missing_values_analysis import SimpleMissingValuesAnalysis
+from easy_insight.eda_tools.missing_values_analysis import SimpleMissingValuesAnalysis
 
-from easy_insight.eda.eda_tools.univariate_analysis import UnivariateAnalyzer, NumericalUnivariateAnalysis, CategoricalUnivariateAnalysis
+from easy_insight.eda_tools.univariate_analysis import UnivariateAnalyzer, NumericalUnivariateAnalysis, CategoricalUnivariateAnalysis
 
-from easy_insight.eda.eda_tools.bivariate_analysis import BivariateAnalyzer, NumericalVsNumericalAnalysisStrategy, CategoricalVsNumericalAnalysisStrategy
+from easy_insight.eda_tools.bivariate_analysis import BivariateAnalyzer, NumericalVsNumericalAnalysisStrategy, CategoricalVsNumericalAnalysisStrategy
 
-from easy_insight.eda.eda_tools.multivariate_analysis import SimpleMultivariateAnalysis
+from easy_insight.eda_tools.multivariate_analysis import SimpleMultivariateAnalysis
 ```
 
 ## Load your DataFrame (example)
@@ -63,7 +63,7 @@ df = pd.read_csv('your_dataset.csv')
 ### For Quick automated EDA
 
 ```python
-from easy_insight.eda.eda_tools.utility import quick_eda
+from easy_insight.eda_tools.utility import quick_eda
 
 quick_eda(df, perform_data_inspection=True, perform_missing_values_analysis=True,
           perform_univariate_analysis=True, perform_bivariate_analysis=True, perform_multivariate_analysis=True)

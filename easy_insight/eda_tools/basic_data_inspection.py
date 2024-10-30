@@ -20,7 +20,7 @@ class SummaryStatisticsInspectionStrategy(DataInspectionStrategy):
         print("\nSummary Statistics (Numerical Columns)")
         print(df.describe())
         print("\nSummary Statistics (Category Columns)")
-        print(df.describe(include=["category"]))
+        print(df.describe(include=["category","object"]))
 
 
 class DataInspector:

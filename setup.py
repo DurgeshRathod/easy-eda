@@ -16,6 +16,7 @@ setup(
         "pandas>=1.0.0",
         "numpy>=1.18.0",
         "matplotlib>=3.2.0",
+        "seaborn>=0.13.2"
         # Add any other dependencies here
     ],
     classifiers=[

@@ -68,4 +68,4 @@ def quick_eda(df, perform_data_inspection=True, perform_missing_values_analysis=
     if perform_multivariate_analysis:
         # Multivariate Analysis
         multivariate_analysis = SimpleMultivariateAnalysis()
-        multivariate_analysis.analyze(df)
+        multivariate_analysis.generate_correlation_heatmap(df)
