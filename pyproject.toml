@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "easy-insight"
-version = "1.0.3"
+version = "1.0.4"
 description = "A simple library for easy exploratory data analysis"
 authors = ["Durgesh Rathod <durgeshrathod.777@gmail.com>"]
 readme = "README.md"  # Make sure this file exists
